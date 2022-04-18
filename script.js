@@ -1,6 +1,9 @@
-
 function addTags(value) {
     if(value === 'CPU') {
+        if(!!document.getElementById('inicia-jogo')) {
+            document.getElementById('inicia-jogo').remove()
+        }
+
         // Criando tags HTML
         let criaDiv = document.createElement('div') // <div></div>
         criaDiv.id = 'escolhe-dificuldade'
@@ -48,21 +51,28 @@ function addTags(value) {
 
     }
 
-    if(value === 'amigo' || value === 'escolha') {
+    if(value === 'escolha') {
         if(!!document.getElementById('escolhe-dificuldade')) {
             document.getElementById('escolhe-modo').removeChild(document.getElementById('escolhe-dificuldade'))
         }
+        if(!!document.getElementById('inicia-jogo')){
+            document.getElementById('inicia-jogo').remove()
+        }
     }
 
-    // if(value === 'amigo') {
-    //     let criaButton = document.createElement('input')
-    //     criaButton.id = 'inicia-jogo'
-    //     criaButton.type = 'button'
-    //     criaButton.value = 'Iniciar'
+    if(value === 'amigo') {
+        if(!!document.getElementById('escolhe-dificuldade')) {
+            document.getElementById('escolhe-dificuldade').remove()
+        }
 
-    //     let divEscolheModo = document.querySelector('#escolhe-modo')
-    //     divEscolheModo.appendChild(criaButton)
-    // }
+        let criaButton = document.createElement('input')
+        criaButton.id = 'inicia-jogo'
+        criaButton.type = 'button'
+        criaButton.value = 'Iniciar'
+
+        let divEscolheModo = document.querySelector('#escolhe-modo')
+        divEscolheModo.appendChild(criaButton)
+    }
 }
 
 // function iniciaJogo() {
