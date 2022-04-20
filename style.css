@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+h1 {
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+    background-color: rgb(233, 229, 10);
+    color: white;
+    width: 50%;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+label {
+    display: block;
+    text-align: center;
+}
+
+#mostrador {
+    margin: auto;
+    margin-top: 30px;
+    width: 50%;
+}
+
+
+#modo-de-jogo {
+    margin: auto;
+    width: 150px;
+    height: 30px;
+    box-shadow: 0px 0px 7px #51B519;
+}
+
+
+#selecao {
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.inicia-jogo {
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    width: 200px;
+    height: 30px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: #1928B5;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+}
+
+.inicia-jogo:active {
+    background-color: #6144EB;
+    margin-top: 42px;
+    padding-left: 2px;
+    box-shadow: none;
+}

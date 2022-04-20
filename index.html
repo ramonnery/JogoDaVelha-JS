@@ -9,18 +9,24 @@
 </head>
 <body>
     <h1>Jogo da Velha</h1>
-    <div id="escolhe-modo">
 
-        <label for="modo-de-jogo">Escolha com quem deseja jogar:</label>
-
-        <select id="modo-de-jogo" name="modo-de-jogo" required onchange="addTags(this.value)">
-            <option value="escolha" label="Escolha..."></option>
-            <option value="CPU">Máquina</option>
-            <option value="amigo">Amigo</option>
-        </select>
-        <br>
-        
-
+    <div id="mostrador">
+        <div id="escolhe-modo">
+    
+            <label for="modo-de-jogo">Escolha com quem deseja jogar:</label>
+    
+            <div id="selecao">
+                <select id="modo-de-jogo" name="modo-de-jogo" required onchange="addTags(this.value)">
+                    <option value="escolha" label="Escolha..."></option>
+                    <option value="CPU">Máquina</option>
+                    <option value="amigo">Amigo</option>
+                </select>
+                <br>
+            </div>
+        </div>
+        <div id="rodando-jogo">
+            
+        </div>
     </div>
 
     <script src="script.js"></script>
