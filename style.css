@@ -22,6 +22,13 @@ label {
     text-align: center;
 }
 
+img {
+    width: 35px;
+    height: 35px;
+    padding-top: 10px;
+
+}
+
 #mostrador {
     margin: auto;
     margin-top: 30px;
@@ -64,4 +71,27 @@ label {
     margin-top: 42px;
     padding-left: 2px;
     box-shadow: none;
+}
+
+#rodando-jogo {
+    text-align: center;
+}
+
+#rodando-jogo > p {
+    font-size: 20px;
+    text-transform: uppercase;
+    /* display: inline-block; */
+}
+
+#tabuleiro {
+    margin: auto;
+    width: 260px;
+    margin-top: 20px;
+}
+
+.espaco {
+    width: 80px;
+    height: 80px;
+    border: 2px solid black;
+    float: left;
 }
