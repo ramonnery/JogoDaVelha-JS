@@ -89,9 +89,16 @@ img {
     margin-top: 20px;
 }
 
+.images {
+    padding-top: 17px;
+    width: 45px;
+    height: 45px;
+}
+
 .espaco {
     width: 80px;
     height: 80px;
     border: 2px solid black;
     float: left;
 }
+

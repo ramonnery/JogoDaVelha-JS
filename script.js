@@ -79,5 +79,50 @@ function addTags(value) {
 }
 
 
+const player1 = 'x'
+const player2 = 'o'
+let playerTime = player1
+let gameOver = false
+
+atualizaMostrador()
+inicializarEspaco()
+
+function atualizaMostrador() {
+    if(gameOver) {return}
+
+    let player = document.getElementById('image')
+
+    if(playerTime === player1) {
+        player.setAttribute('src', 'images/x.png')
+    }
+    else {
+        player.setAttribute('src', 'images/bolinha.png')
+    }
+}
+
+function inicializarEspaco() {
+    let espaco = document.getElementsByClassName('espaco')
+
+    for(let i = 0; i < espaco.length; i++) {
+        espaco[i].addEventListener('click', function() {
+            if(gameOver) {return}
+
+            if(this.getElementsByClassName('images').length == 0) {                
+                if(playerTime === player1) {
+                    this.innerHTML = '<img class="images" src="images/x.png">'
+                    playerTime = player2
+                }
+                else {
+                    this.innerHTML = '<img class="images" src="images/bolinha.png">'
+                    playerTime = player1
+                }
+            }
+
+            atualizaMostrador()
+        })
+    }
+}
+
+
 
 
